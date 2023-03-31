@@ -1,0 +1,185 @@
+html, body {
+    color: #222222;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+#presentation > img {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+#presentation{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+}
+
+#presentation > p {
+    color: #888888;
+    font-size: 1.2rem;
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+#contact {
+    display: flex;
+    align-content: stretch;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    
+    
+}
+#contact > a {
+    display: flex;
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+    transform: none;
+    box-sizing: border-box;
+    border-radius: 50%;
+    margin-left: 10px;
+    margin-right: 10px;
+    transition: .3s all;
+}
+#contact > a:hover {
+    background-color: cadetblue;
+    box-shadow: 0px 5px 40px cadetblue;
+    
+}
+
+.btn {
+    color: #222222;
+    border: 3px solid #222222;
+    padding: 8px 15px;
+    margin-top: 20px;
+    font-size: 1.2rem;
+    font-weight: 700;
+    border-radius: 15px;
+    text-decoration: none;
+    margin-bottom: 20px;
+    transition: .3s all;
+}
+.btn:hover{
+    background-color: cadetblue;
+    border-radius: 25px;
+    box-shadow: 0px 10px 40px cadetblue;
+    color: white;
+}
+
+#projects {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    padding: 20px;
+    max-width: 800px;
+    flex-direction: column;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 0;
+    font-size: 1.8rem;
+}
+
+#grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.project img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border: 2px solid #ddd ;
+}
+
+.project{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#projects > .btn {
+    width: 155px;
+    margin: auto;
+}
+
+@keyframes appearY {
+    from{
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to{
+        opacity: 1;
+        transform: none;
+    }
+}
+
+@keyframes appearX {
+    from{
+        opacity: 0;
+        transform: translateX(30px);
+    }
+    to{
+        opacity: 1;
+        transform: none;
+    }
+}
+@keyframes appearD {
+    from{
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+    to{
+        opacity: 1;
+        transform: none;
+    }
+}
+@keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform : rotate(360deg);
+    }
+
+}
+#presentation > h1 > span{
+    display: inline-block;
+    opacity: 1;
+    animation: rotation 1s infinite;
+}
+
+#presentation > h1  {
+    opacity: 0;
+    animation:appearY 1s forwards 0.5s;
+}
+#presentation > img  {
+    opacity: 0;
+    animation:appearY 1s forwards ;
+}
+#presentation > p {
+    opacity: 0;
+    animation: appearY 1s forwards 0.6s ;
+}
+#presentation > .btn{
+    opacity: 0;
+    animation: appearX 1s forwards 0.7s ;
+}
+#contact > a {
+    opacity: 0;
+    animation: appearD 1s forwards 1s;
+}
