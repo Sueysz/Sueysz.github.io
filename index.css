@@ -233,3 +233,12 @@ h2 {
   #projects > .btn{
     width: 138px;
   }
+
+.btn2{
+    color: white;
+    text-decoration: none;
+    
+  }
+  .btn2:hover {
+    border-bottom: solid #f7ecdf;
+  }
