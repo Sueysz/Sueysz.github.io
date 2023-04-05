@@ -229,3 +229,7 @@ h2 {
   #projects > h2{
     padding-bottom: 25px;
   }
+
+  #projects > .btn{
+    width: 138px;
+  }
