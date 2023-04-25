@@ -20,7 +20,7 @@ html, body.dark-mode {
     height: 100%;
     font-family: 'Poppins', sans-serif;
     scroll-behavior: smooth;
-    background: linear-gradient(315deg, rgb(3, 38, 29) 3%, rgb(7, 23, 16) 38%, rgb(47, 69, 65) 68%, rgba(61, 68, 68, 0.595) 98%);
+    background: linear-gradient(315deg, rgb(14, 60, 26) 3%, rgb(8, 34, 77) 38%, rgb(24, 57, 93) 68%, rgba(17, 41, 41, 0.595) 98%);
     overflow: auto;
     animation: gradient 20s ease infinite;
     background-size: 400% 400%;
