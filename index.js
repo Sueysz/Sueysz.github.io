@@ -1,19 +1,12 @@
 const toggleBtn = document.getElementById('dark-btn');
 const body = document.body;
 
-toggleBtn.addEventListener('click', () =>{
-  body.classList.toggle('dark-mode');
+toggleBtn.addEventListener('click', () => {
   if (body.classList.contains('dark-mode')) {
-    
-    const moonIcon = document.createElement('span');
-    moonIcon.id = 'dark-btn';
-    moonIcon.innerHTML = '🌙';
-    toggleBtn.parentNode.replaceChild(moonIcon, toggleBtn);
+    body.classList.remove('dark-mode');
+    toggleBtn.innerHTML = '☀️';
   } else {
-    
-    const sunIcon = document.createElement('span');
-    sunIcon.id = 'dark-btn';
-    sunIcon.innerHTML = '☀️';
-    toggleBtn.parentNode.replaceChild(sunIcon, toggleBtn);
+    body.classList.add('dark-mode');
+    toggleBtn.innerHTML = '🌙';
   }
 });
