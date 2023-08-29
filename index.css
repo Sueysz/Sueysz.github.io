@@ -158,6 +158,13 @@ h2 {
     color: #f7ecdf;
 }
 
+h3 {
+    text-align: center;
+}
+h4 {
+    text-align: center;
+}
+
 #grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -166,14 +173,16 @@ h2 {
 .project img {
     width: 100%;
     height: 200px;
-    object-fit: cover;
-    border: 2px solid black;
+    object-fit:cover;
+    object-position:center center;
+    border: none;
     border-radius: 10px;
 }
 
 .project {
     padding-left: 40px;
     padding-right: 40px;
+    padding-bottom: 40px;
 }
 
 #projects>.btn {
